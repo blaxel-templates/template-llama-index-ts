@@ -1,0 +1,6 @@
+name = "{{.ProjectName}}"
+workspace = "{{.Workspace}}"
+type = "agent"
+
+functions = ["all"]
+models = ["{{.Model}}"]
