@@ -1,5 +1,3 @@
-name = "agent-llama-index"
-workspace = ""
 type = "agent"
 
 functions = ["all"]
