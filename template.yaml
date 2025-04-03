@@ -1,5 +1,0 @@
-variables:
-  - name: "Model"
-    label: "Blaxel model"
-    description: "Model to use for your agent app"
-    type: "model"
