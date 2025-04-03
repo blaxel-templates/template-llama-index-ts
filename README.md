@@ -1,1 +1,1 @@
-# Blaxel Agent - {{ .ProjectName }}
+# Blaxel Agent
