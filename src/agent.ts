@@ -1,5 +1,6 @@
 import { blModel, blTools, logger } from "@blaxel/sdk";
-import { agent, AgentStream, tool, ToolCallLLM } from "llamaindex";
+import type { ToolCallLLM } from "llamaindex" with { "resolution-mode": "import" };
+
 import { z } from "zod";
 interface Stream {
   write: (data: string) => void;
@@ -10,9 +11,10 @@ export default async function myagent(
   input: string,
   stream: Stream
 ): Promise<void> {
+  const { agent, AgentStream, tool } = await import("llamaindex");
   const streamResponse = agent({
     llm: (await blModel(
-      "sandbox-openai"
+      "gpt-4o-mini"
     ).ToLlamaIndex()) as unknown as ToolCallLLM,
     tools: [
       ...(await blTools(["blaxel-search"]).ToLlamaIndex()),
