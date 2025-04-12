@@ -1,5 +1,7 @@
 import { blModel, blTools, logger } from "@blaxel/sdk";
 import type { ToolCallLLM } from "llamaindex" with { "resolution-mode": "import" };
+//@ts-ignore - Right now llamaindex can't be imported without es-lint errors with cjs
+import { agent, AgentStream, tool } from "llamaindex";
 
 import { z } from "zod";
 interface Stream {
@@ -11,13 +13,13 @@ export default async function myagent(
   input: string,
   stream: Stream
 ): Promise<void> {
-  const { agent, AgentStream, tool } = await import("llamaindex");
+  const tools = await blTools(["blaxel-search"]).ToLlamaIndex()
   const streamResponse = agent({
     llm: (await blModel(
-      "gpt-4o-mini"
+      "sandbox-openai"
     ).ToLlamaIndex()) as unknown as ToolCallLLM,
     tools: [
-      ...(await blTools(["blaxel-search"]).ToLlamaIndex()),
+      ...tools,
       tool({
         name: "weather",
         description: "Get the weather in a specific city",
