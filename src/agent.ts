@@ -1,5 +1,4 @@
 import { blModel, blTools, logger } from "@blaxel/sdk";
-//@ts-ignore - Right now llamaindex can't be imported without es-lint errors with cjs
 import { agent, AgentStream, tool } from "llamaindex";
 
 import { z } from "zod";

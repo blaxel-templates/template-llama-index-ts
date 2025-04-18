@@ -6,6 +6,7 @@
   "keywords": [],
   "license": "MIT",
   "author": "Blaxel",
+  "type": "module",
   "scripts": {
     "start": "tsx src/index.ts",
     "prod": "node dist/index.js",
@@ -13,7 +14,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@blaxel/sdk": "0.1.8",
+    "@blaxel/sdk": "0.1.9",
     "fastify": "^5.2.1",
     "llamaindex": "^0.9.11",
     "zod": "^3.24.2"

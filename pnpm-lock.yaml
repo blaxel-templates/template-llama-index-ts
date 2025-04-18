@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@blaxel/sdk':
-        specifier: 0.1.8
-        version: 0.1.8(llamaindex@0.9.17(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.2))
+        specifier: 0.1.9
+        version: 0.1.9(llamaindex@0.9.17(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.2))
       fastify:
         specifier: ^5.2.1
         version: 5.3.0
@@ -47,8 +47,8 @@ packages:
     resolution: {integrity: sha512-ZoGKwa4C9fC9Av6bdfqcW6Ix5ot05F/S4VxWR2nHuMv7hzfmAjTOcUiWT7UR4hM/U0whf84VhDtXN/DWAk52KA==}
     engines: {node: '>=18.0.0'}
 
-  '@blaxel/sdk@0.1.8':
-    resolution: {integrity: sha512-p97JwmRdwGgQMk7cUmk6WtiR6qBJolOIelK12LTLiXnlndHYOEjv6+Ys/24Li3a7WleRKfk+9k/0JZAaOPStUA==}
+  '@blaxel/sdk@0.1.9':
+    resolution: {integrity: sha512-U4AQCXHXNf4tQhuVq+SUj9WSk1GPcEDdamrRP97yf/azNeuHMZucrUPL6pbsESmllOpjZi5U1r6FXQvS/eHu6A==}
     engines: {node: '>=18'}
     peerDependencies:
       '@ai-sdk/anthropic': ^1.2.9
@@ -1468,7 +1468,7 @@ snapshots:
       '@smithy/types': 4.2.0
       tslib: 2.8.1
 
-  '@blaxel/sdk@0.1.8(llamaindex@0.9.17(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.2))':
+  '@blaxel/sdk@0.1.9(llamaindex@0.9.17(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.1)(zod@3.24.2))':
     dependencies:
       '@hey-api/client-fetch': 0.5.7
       '@modelcontextprotocol/sdk': 1.9.0
