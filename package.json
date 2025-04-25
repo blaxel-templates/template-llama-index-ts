@@ -14,7 +14,8 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@blaxel/sdk": "0.1.9",
+    "@blaxel/sdk": "0.1.11",
+    "@opentelemetry/instrumentation-fastify": "^0.45.0",
     "fastify": "^5.2.1",
     "llamaindex": "^0.9.11",
     "zod": "^3.24.2"
