@@ -1,4 +1,4 @@
-import { blModel, blTools, logger } from "@blaxel/sdk";
+import { blModel, blTools } from "@blaxel/llamaindex";
 import { agent, AgentStream, tool } from "llamaindex";
 
 import { z } from "zod";
@@ -11,9 +11,10 @@ export default async function myagent(
   input: string,
   stream: Stream
 ): Promise<void> {
-  const tools = await blTools(["blaxel-search"]).ToLlamaIndex();
+  const tools = await blTools(["blaxel-search"]);
+  const llm = await blModel("sandbox-openai");
   const streamResponse = agent({
-    llm: await blModel("sandbox-openai").ToLlamaIndex(),
+    llm,
     tools: [
       ...tools,
       tool({
@@ -23,7 +24,7 @@ export default async function myagent(
           city: z.string(),
         }),
         execute: async (input) => {
-          logger.debug("TOOLCALLING: local weather", input);
+          console.debug("TOOLCALLING: local weather", input);
           return `The weather in ${input.city} is sunny`;
         },
       }),
