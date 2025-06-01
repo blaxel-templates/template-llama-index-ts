@@ -1,81 +1,160 @@
 # Blaxel LlamaIndex Agent
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Build Status](https://github.com/blaxel-templates/template-llama-index-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/blaxel-templates/template-llama-index-ts/actions) [![Coverage Status](https://codecov.io/gh/blaxel-templates/template-llama-index-ts/branch/main/graph/badge.svg)](https://codecov.io/gh/blaxel-templates/template-llama-index-ts) [![npm version](https://img.shields.io/npm/v/@blaxel/llama-index-agent)](https://www.npmjs.com/package/@blaxel/llama-index-agent)
+
 <p align="center">
-  <img src="https://blaxel.ai/logo.png" alt="Blaxel"/>
+  <img src="https://blaxel.ai/logo.png" alt="Blaxel" width="150"/>
 </p>
 
-A template implementation of a conversational agent using LlamaIndex and GPT-4. This agent demonstrates the power of LlamaIndex for building interactive AI agents with tool integration capabilities.
+A conversational AI agent built with LlamaIndex and GPT-4, showcasing tool integrations and flexible deployments.
+
+## Table of Contents
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [API Usage](#api-usage)
+- [Project Structure](#project-structure)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
 
 ## Features
 
 - Interactive conversational interface
-- Tool integration support (including weather and search capabilities)
+- Tool integrations (weather, search, etc.)
 - Streaming responses for real-time interaction
-- Built on LlamaIndex for efficient agent orchestration
-- Easy deployment and integration with Blaxel platform
+- Configurable via `blaxel.toml`
+- Easy deployment on Blaxel platform
 
 ## Prerequisites
 
-- **Node.js:** v18 or later.
-- **[Blaxel CLI](https://docs.blaxel.ai/Get-started):** Ensure you have the Blaxel CLI installed. If not, install it globally:
-  ```bash
-  curl -fsSL https://raw.githubusercontent.com/blaxel-ai/toolkit/main/install.sh | BINDIR=$HOME/.local/bin sh
-  ```
-- **Blaxel login:** Login to Blaxel platform
-  ```bash
-  bl login YOUR-WORKSPACE
-  ```
+- Node.js >= 16
+- Yarn v1.22 or npm
+- OpenAI API key
 
 ## Installation
 
-**Clone the repository and install dependencies:**
-
 ```bash
-git clone https://github.com/blaxel-ai/template-llama-index-ts.git
+# Clone the repository
+git clone https://github.com/blaxel-templates/template-llama-index-ts.git
 cd template-llama-index-ts
-uv sync
+# Install dependencies
+yarn install # or npm install
 ```
 
-## Running the Server Locally
+## Configuration
 
-Start the development server with hot reloading:
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+2. Set variables in `.env`:
+   ```ini
+   OPENAI_API_KEY=your_key_here
+   INDEX_PATH=./data/index.json
+   ```
+3. (Optional) Customize `blaxel.toml` for deployment settings.
+
+## Usage
+
+### Run Locally
 
 ```bash
-bl serve --hotreload
+yarn dev # or npm run dev
 ```
+Server runs at `http://localhost:3000` by default.
 
-_Note:_ This command starts the server and enables hot reload so that changes to the source code are automatically reflected.
-
-## Testing your agent
-
-You can test your agent using the chat interface:
+### Example Request
 
 ```bash
-bl chat --local blaxel-agent
+curl -X POST http://localhost:3000/chat \
+  -H "Content-Type: application/json" \
+  -d '{"query":"What is the weather in Paris?"}'
 ```
 
-Or run it directly with specific input:
+## API Usage
+
+### Health Check
+
+```
+GET /health
+```
+
+_Response:_
+```json
+{ "status": "ok" }
+```
+
+### Chat Endpoint
+
+```
+POST /chat
+```
+
+_Request Body:_
+```json
+{ "query": "Tell me a joke." }
+```
+
+_Response:_
+```json
+{ "response": "Why did the chicken cross the road?" }
+```
+
+## Project Structure
+
+```
+├── src
+│   ├── agent.ts    # Agent logic and tool integrations
+│   ├── index.ts    # Server and routing
+│   └── utils.ts    # Helper functions
+├── blaxel.toml     # Deployment config
+├── .env.example    # Example env variables
+└── README.md       # Project documentation
+```
+
+## Testing
 
 ```bash
-bl run agent blaxel-agent --local --data '{"input": "What is the weather in Paris?"}'
+yarn test # or npm test
 ```
 
-## Deploying to Blaxel
+## Deployment
 
-When you are ready to deploy your application:
+Build and start:
+
+```bash
+yarn build
+yarn start
+```
+
+Deploy via Blaxel CLI:
 
 ```bash
 bl deploy
 ```
 
-This command uses your code and the configuration files under the `.blaxel` directory to deploy your application.
+## Contributing
 
-## Project Structure
+Contributions are welcome! Follow these steps:
 
-- **src/index.ts** - Application entry point
-- **src/agent.ts** - Core agent implementation with LlamaIndex integration
-- **blaxel.toml** - Blaxel deployment configuration
+1. Fork the repository
+2. Create a branch (`git checkout -b feature/xyz`)
+3. Commit your changes (`git commit -m "feat: add xyz"`)
+4. Push to your branch (`git push origin feature/xyz`)
+5. Open a pull request
+
+Please follow existing code style and include tests for new features.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support
+
+For questions or issues, please open an issue on GitHub or email `support@blaxel.ai`.
