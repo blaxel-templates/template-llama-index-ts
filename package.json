@@ -5,8 +5,8 @@
   "main": "src/index.ts",
   "keywords": [],
   "license": "MIT",
-  "author": "Blaxel",
   "type": "module",
+  "author": "Blaxel",
   "scripts": {
     "start": "tsx src/index.ts",
     "prod": "node dist/index.js",
@@ -17,15 +17,17 @@
     "@blaxel/core": "0.2.16",
     "@blaxel/llamaindex": "0.2.16",
     "@blaxel/telemetry": "0.2.16",
-    "@opentelemetry/instrumentation-fastify": "^0.45.0",
-    "fastify": "^5.3.2",
-    "llamaindex": "^0.9.19",
-    "zod": "^3.24.4"
+    "@llamaindex/core": "0.6.9",
+    "@llamaindex/workflow": "1.1.7",
+    "@opentelemetry/instrumentation-fastify": "^0.47.0",
+    "fastify": "^5.3.3",
+    "llamaindex": "^0.11.6",
+    "zod": "^3.25.58"
   },
   "devDependencies": {
-    "@types/express": "^5.0.1",
-    "@types/node": "^22.15.9",
-    "tsx": "^4.19.4",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
     "typescript": "^5.8.3"
   }
 }
