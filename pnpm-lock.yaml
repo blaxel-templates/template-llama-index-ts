@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@blaxel/core':
-        specifier: 0.2.16
-        version: 0.2.16(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
+        specifier: 0.2.18
+        version: 0.2.18(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@blaxel/llamaindex':
-        specifier: 0.2.16
-        version: 0.2.16(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llamaindex/env@0.1.30)(@opentelemetry/api@1.9.0)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod@3.25.58)
+        specifier: 0.2.18
+        version: 0.2.18(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.58))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.12.1)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod@3.25.58)
       '@blaxel/telemetry':
-        specifier: 0.2.16
-        version: 0.2.16(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(react@19.1.0)(zod@3.25.58)
+        specifier: 0.2.18
+        version: 0.2.18(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(react@19.1.0)(zod@3.25.58)
       '@llamaindex/core':
         specifier: 0.6.9
         version: 0.6.9
@@ -127,16 +127,16 @@ packages:
     resolution: {integrity: sha512-Znroqdai1a90TlxGaJ+FK1lwC0fHpo97Xjsp5UKGR5JODYm7f9+/fF17ebO1KdoBr/Rm0UIFiF5VmI8ts9F1eA==}
     engines: {node: '>=18.0.0'}
 
-  '@blaxel/core@0.2.16':
-    resolution: {integrity: sha512-1YbpB5vCuiw9zbctVSrhNqyrVDWlUnWHt2CxU/hdVTLnIq59MjsPu4i0kgmIapyiW9s4BRmXTefmePCUYV6EyQ==}
+  '@blaxel/core@0.2.18':
+    resolution: {integrity: sha512-QJRr4UbrpYEQctSBivuh5vFLmJrCsqpXKS6ZXn1atH+YVaF+w2tzel/MdsA1mv0vjMZYw/RuN+7bXaUu+meexA==}
     engines: {node: '>=18'}
 
-  '@blaxel/llamaindex@0.2.16':
-    resolution: {integrity: sha512-1o5Vrlv6eFPyWwplnG+eLnf4pWKM3wLDgePIzfhSIKoZo0bHKOAL6kF5Zqg6Z8J5nmuv4j0D/uE3xEu6RQBnqg==}
+  '@blaxel/llamaindex@0.2.18':
+    resolution: {integrity: sha512-XPi/169W9qibl3Tvq2JiRLnmfNSy9hG/zsqiubfI8st8RTlMABNJr6hlqSRvKff7dDRbYtLCKDlhFArv98UQ+g==}
     engines: {node: '>=18'}
 
-  '@blaxel/telemetry@0.2.16':
-    resolution: {integrity: sha512-wnqH5RLyAliKiTww3eNi+EynJrRnz3ofK1VmwI6YdsvOz5uC0OVvSCP0iwzHeZsh1B4ZSMj1fCmKUhhiw/T5fg==}
+  '@blaxel/telemetry@0.2.18':
+    resolution: {integrity: sha512-Yud+9ObZ2hO65VS8Vdl2SHMpsnRRspAiGyHdd114tevw1qnzm1AaOTs8wW6BoyIjo5VJtSD24CnnuEgu+AJo0Q==}
     engines: {node: '>=18'}
 
   '@esbuild/aix-ppc64@0.25.5':
@@ -321,6 +321,7 @@ packages:
 
   '@hey-api/client-fetch@0.10.2':
     resolution: {integrity: sha512-AGiFYDx+y8VT1wlQ3EbzzZtfU8EfV+hLLRTtr8Y/tjYZaxIECwJagVZf24YzNbtEBXONFV50bwcU1wLVGXe1ow==}
+    deprecated: Starting with v0.73.0, this package is bundled directly inside @hey-api/openapi-ts.
     peerDependencies:
       '@hey-api/openapi-ts': < 2
 
@@ -374,18 +375,6 @@ packages:
       '@llamaindex/core': 0.6.9
       '@llamaindex/env': 0.1.30
 
-  '@llamaindex/cloud@4.0.7':
-    resolution: {integrity: sha512-6Ghryb1M8YHDisy4MgGHTpoUY9WQVAS1wBOI8j9fySIf/E2O50tkc15I3Tw5oTeffSdvVE9El3/L8PhZnLM48A==}
-    peerDependencies:
-      '@llamaindex/core': 0.6.5
-      '@llamaindex/env': 0.1.30
-
-  '@llamaindex/core@0.6.5':
-    resolution: {integrity: sha512-72/JrB0g8Gbor6Vzrsz/UGZoNAe2RnGSfq9vfNHahgUiSU9OfQNMHEH7O/xQRrI1BAWOOfpiRv/sf3yaZNbMcw==}
-
-  '@llamaindex/core@0.6.6':
-    resolution: {integrity: sha512-UplAAxsv3LnU1EP2kPuyqDtRQmQqYtsI00rVDeexOwgqwNTfGddI0yPRrFTBSNe0q2ttBuPsB7D3M7j4UY3yXQ==}
-
   '@llamaindex/core@0.6.9':
     resolution: {integrity: sha512-w8SMrcj35/mtB9z7n0hnq9idxgmtHBU8ZNFzde/94mysRnqgWjc2io+qIVOrCrWIokLVVcTulYD7EeiewPtC5g==}
 
@@ -400,10 +389,10 @@ packages:
       gpt-tokenizer:
         optional: true
 
-  '@llamaindex/google@0.3.8':
-    resolution: {integrity: sha512-q0A3KX5bEgyUFvaNWH3YJ7ojw9yO/OrHQRyUTlBH2ZzMD5aXDirJq2Anjc14kyAvUf2EpxxBRU2YjxgCydQOOg==}
+  '@llamaindex/google@0.3.2':
+    resolution: {integrity: sha512-FWKHFGVNAh54eVlAWKaKC3gh1HvqqlOt7Slg12Bovgn1GDgRu+rJs7SBhYrMK7GhNILxEM4cPI8N4SDSmJUamA==}
     peerDependencies:
-      '@llamaindex/core': 0.6.9
+      '@llamaindex/core': 0.6.6
       '@llamaindex/env': 0.1.30
 
   '@llamaindex/mistral@0.1.9':
@@ -411,14 +400,6 @@ packages:
     peerDependencies:
       '@llamaindex/core': 0.6.9
       '@llamaindex/env': 0.1.30
-
-  '@llamaindex/node-parser@2.0.5':
-    resolution: {integrity: sha512-p0Y3RBQUyUp7ry5SDLuGbL0sMvokwuuxIBjXqShwSyRYlkgxM9gOUQjorO+GeeS/ltUyGeZtGox7h0+wpGV7yw==}
-    peerDependencies:
-      '@llamaindex/core': 0.6.5
-      '@llamaindex/env': 0.1.30
-      tree-sitter: ^0.22.0
-      web-tree-sitter: ^0.24.3
 
   '@llamaindex/node-parser@2.0.9':
     resolution: {integrity: sha512-MvUiOrZ15VoA+N1jcSY0SjZ92iEAUVfCb3AusmPCzTAYbO91lifa6Oll1KVrQl89SS3GV1yPm1WI/Fe3ViV9Yg==}
@@ -433,13 +414,6 @@ packages:
     peerDependencies:
       '@llamaindex/core': 0.6.5
       '@llamaindex/env': 0.1.30
-
-  '@llamaindex/workflow@1.0.3':
-    resolution: {integrity: sha512-GzYzLfn12BTQiLVwFr9tGl1Sa7PPVErLLQAJMgvfjUK8cv764SpJGqln8iKTxnKF05HcRrmJeE7ZD9Lzpf7UrA==}
-    peerDependencies:
-      '@llamaindex/core': 0.6.2
-      '@llamaindex/env': 0.1.29
-      zod: ^3.23.8
 
   '@llamaindex/workflow@1.1.7':
     resolution: {integrity: sha512-OcCcaYyqOb0iuPTd+KZtldaUc2mspb3KUrHIgAaH/Jshgm1bIx40fLuskNt/XIi2pf3Lvi0YPgti47ieqzAn6A==}
@@ -1248,10 +1222,6 @@ packages:
   light-my-request@6.6.0:
     resolution: {integrity: sha512-CHYbu8RtboSIoVsHZ6Ye4cj4Aw/yg2oAFimlF7mNvfDV192LR7nDiKtSIfCuLT7KokPSTn/9kfVLm5OGN0A28A==}
 
-  llamaindex@0.10.6:
-    resolution: {integrity: sha512-5tCygOreATUxUYe7cFNSlsWwNK3glm81ufMPapjMWsTtN1dIdBh3MC0o/DG5wU4iFgx+0mJQsAGOB7ea1I7JUg==}
-    engines: {node: '>=18.0.0'}
-
   llamaindex@0.11.6:
     resolution: {integrity: sha512-PQG3Ws+3mgLKGrciGLai2iRfYURd7tVvHtU6GBvVaZ3mZ1i3vwRKT42FuBME2l/i7b8HLz+4QHWA92qQoYc1eA==}
     engines: {node: '>=18.0.0'}
@@ -1875,7 +1845,7 @@ snapshots:
       '@smithy/types': 4.3.1
       tslib: 2.8.1
 
-  '@blaxel/core@0.2.16(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))':
+  '@blaxel/core@0.2.18(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))':
     dependencies:
       '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@modelcontextprotocol/sdk': 1.12.1
@@ -1895,26 +1865,32 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@blaxel/llamaindex@0.2.16(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llamaindex/env@0.1.30)(@opentelemetry/api@1.9.0)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod@3.25.58)':
+  '@blaxel/llamaindex@0.2.18(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.58))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.12.1)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod@3.25.58)':
     dependencies:
-      '@blaxel/core': 0.2.16(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
-      '@llamaindex/anthropic': 0.3.11(@llamaindex/core@0.6.6)(@llamaindex/env@0.1.30)
-      '@llamaindex/core': 0.6.6
-      '@llamaindex/google': 0.3.8(@llamaindex/core@0.6.6)(@llamaindex/env@0.1.30)
-      '@llamaindex/mistral': 0.1.9(@llamaindex/core@0.6.6)(@llamaindex/env@0.1.30)(zod@3.25.58)
-      '@llamaindex/openai': 0.3.7(@llamaindex/core@0.6.6)(@llamaindex/env@0.1.30)(ws@8.18.2)(zod@3.25.58)
+      '@blaxel/core': 0.2.18(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
+      '@llamaindex/anthropic': 0.3.11(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)
+      '@llamaindex/core': 0.6.9
+      '@llamaindex/google': 0.3.2(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)
+      '@llamaindex/mistral': 0.1.9(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)(zod@3.25.58)
+      '@llamaindex/openai': 0.3.7(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)(ws@8.18.2)(zod@3.25.58)
       '@opentelemetry/instrumentation': 0.200.0(@opentelemetry/api@1.9.0)
       '@traceloop/instrumentation-llamaindex': 0.13.0(@opentelemetry/api@1.9.0)
-      llamaindex: 0.10.6(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod@3.25.58)
+      llamaindex: 0.11.6(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.58))(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(zod@3.25.58)
     transitivePeerDependencies:
       - '@hey-api/openapi-ts'
       - '@huggingface/transformers'
+      - '@llama-flow/core'
       - '@llamaindex/env'
+      - '@modelcontextprotocol/sdk'
       - '@opentelemetry/api'
       - bufferutil
       - debug
       - encoding
       - gpt-tokenizer
+      - hono
+      - next
+      - p-retry
+      - rxjs
       - supports-color
       - tree-sitter
       - utf-8-validate
@@ -1922,14 +1898,14 @@ snapshots:
       - ws
       - zod
 
-  '@blaxel/telemetry@0.2.16(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(react@19.1.0)(zod@3.25.58)':
+  '@blaxel/telemetry@0.2.18(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(react@19.1.0)(zod@3.25.58)':
     dependencies:
       '@ai-sdk/anthropic': 1.2.12(zod@3.25.58)
       '@ai-sdk/cerebras': 0.2.14(zod@3.25.58)
       '@ai-sdk/google': 1.2.19(zod@3.25.58)
       '@ai-sdk/groq': 1.2.9(zod@3.25.58)
       '@ai-sdk/openai': 1.3.22(zod@3.25.58)
-      '@blaxel/core': 0.2.16(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
+      '@blaxel/core': 0.2.18(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/api-logs': 0.200.0
       '@opentelemetry/exporter-logs-otlp-http': 0.200.0(@opentelemetry/api@1.9.0)
@@ -2100,10 +2076,10 @@ snapshots:
       p-retry: 6.2.1
       zod: 3.25.58
 
-  '@llamaindex/anthropic@0.3.11(@llamaindex/core@0.6.6)(@llamaindex/env@0.1.30)':
+  '@llamaindex/anthropic@0.3.11(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)':
     dependencies:
       '@anthropic-ai/sdk': 0.37.0
-      '@llamaindex/core': 0.6.6
+      '@llamaindex/core': 0.6.9
       '@llamaindex/env': 0.1.30
       remeda: 2.23.0
     transitivePeerDependencies:
@@ -2116,34 +2092,6 @@ snapshots:
       '@llamaindex/env': 0.1.30
       p-retry: 6.2.1
       zod: 3.25.58
-
-  '@llamaindex/cloud@4.0.7(@llamaindex/core@0.6.5)(@llamaindex/env@0.1.30)':
-    dependencies:
-      '@llamaindex/core': 0.6.5
-      '@llamaindex/env': 0.1.30
-      p-retry: 6.2.1
-
-  '@llamaindex/core@0.6.5':
-    dependencies:
-      '@llamaindex/env': 0.1.30
-      '@types/node': 22.15.31
-      magic-bytes.js: 1.12.1
-      zod: 3.25.58
-      zod-to-json-schema: 3.24.5(zod@3.25.58)
-    transitivePeerDependencies:
-      - '@huggingface/transformers'
-      - gpt-tokenizer
-
-  '@llamaindex/core@0.6.6':
-    dependencies:
-      '@llamaindex/env': 0.1.30
-      '@types/node': 22.15.31
-      magic-bytes.js: 1.12.1
-      zod: 3.25.58
-      zod-to-json-schema: 3.24.5(zod@3.25.58)
-    transitivePeerDependencies:
-      - '@huggingface/transformers'
-      - gpt-tokenizer
 
   '@llamaindex/core@0.6.9':
     dependencies:
@@ -2162,12 +2110,12 @@ snapshots:
       js-tiktoken: 1.0.20
       pathe: 1.1.2
 
-  '@llamaindex/google@0.3.8(@llamaindex/core@0.6.6)(@llamaindex/env@0.1.30)':
+  '@llamaindex/google@0.3.2(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)':
     dependencies:
       '@google-cloud/vertexai': 1.9.0
       '@google/genai': 0.12.0
       '@google/generative-ai': 0.24.0
-      '@llamaindex/core': 0.6.6
+      '@llamaindex/core': 0.6.9
       '@llamaindex/env': 0.1.30
     transitivePeerDependencies:
       - bufferutil
@@ -2175,21 +2123,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@llamaindex/mistral@0.1.9(@llamaindex/core@0.6.6)(@llamaindex/env@0.1.30)(zod@3.25.58)':
+  '@llamaindex/mistral@0.1.9(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)(zod@3.25.58)':
     dependencies:
-      '@llamaindex/core': 0.6.6
+      '@llamaindex/core': 0.6.9
       '@llamaindex/env': 0.1.30
       '@mistralai/mistralai': 1.7.2(zod@3.25.58)
     transitivePeerDependencies:
       - zod
-
-  '@llamaindex/node-parser@2.0.5(@llamaindex/core@0.6.5)(@llamaindex/env@0.1.30)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)':
-    dependencies:
-      '@llamaindex/core': 0.6.5
-      '@llamaindex/env': 0.1.30
-      html-to-text: 9.0.5
-      tree-sitter: 0.22.4
-      web-tree-sitter: 0.24.7
 
   '@llamaindex/node-parser@2.0.9(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)':
     dependencies:
@@ -2199,31 +2139,15 @@ snapshots:
       tree-sitter: 0.22.4
       web-tree-sitter: 0.24.7
 
-  '@llamaindex/openai@0.3.7(@llamaindex/core@0.6.5)(@llamaindex/env@0.1.30)(ws@8.18.2)(zod@3.25.58)':
+  '@llamaindex/openai@0.3.7(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)(ws@8.18.2)(zod@3.25.58)':
     dependencies:
-      '@llamaindex/core': 0.6.5
+      '@llamaindex/core': 0.6.9
       '@llamaindex/env': 0.1.30
       openai: 4.104.0(ws@8.18.2)(zod@3.25.58)
     transitivePeerDependencies:
       - encoding
       - ws
       - zod
-
-  '@llamaindex/openai@0.3.7(@llamaindex/core@0.6.6)(@llamaindex/env@0.1.30)(ws@8.18.2)(zod@3.25.58)':
-    dependencies:
-      '@llamaindex/core': 0.6.6
-      '@llamaindex/env': 0.1.30
-      openai: 4.104.0(ws@8.18.2)(zod@3.25.58)
-    transitivePeerDependencies:
-      - encoding
-      - ws
-      - zod
-
-  '@llamaindex/workflow@1.0.3(@llamaindex/core@0.6.5)(@llamaindex/env@0.1.30)(zod@3.25.58)':
-    dependencies:
-      '@llamaindex/core': 0.6.5
-      '@llamaindex/env': 0.1.30
-      zod: 3.25.58
 
   '@llamaindex/workflow@1.1.7(@llamaindex/core@0.6.9)(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.58)':
     dependencies:
@@ -3188,28 +3112,6 @@ snapshots:
       cookie: 1.0.2
       process-warning: 4.0.1
       set-cookie-parser: 2.7.1
-
-  llamaindex@0.10.6(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod@3.25.58):
-    dependencies:
-      '@llamaindex/cloud': 4.0.7(@llamaindex/core@0.6.5)(@llamaindex/env@0.1.30)
-      '@llamaindex/core': 0.6.5
-      '@llamaindex/env': 0.1.30
-      '@llamaindex/node-parser': 2.0.5(@llamaindex/core@0.6.5)(@llamaindex/env@0.1.30)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)
-      '@llamaindex/openai': 0.3.7(@llamaindex/core@0.6.5)(@llamaindex/env@0.1.30)(ws@8.18.2)(zod@3.25.58)
-      '@llamaindex/workflow': 1.0.3(@llamaindex/core@0.6.5)(@llamaindex/env@0.1.30)(zod@3.25.58)
-      '@types/lodash': 4.17.17
-      '@types/node': 22.15.31
-      ajv: 8.17.1
-      lodash: 4.17.21
-      magic-bytes.js: 1.12.1
-    transitivePeerDependencies:
-      - '@huggingface/transformers'
-      - encoding
-      - gpt-tokenizer
-      - tree-sitter
-      - web-tree-sitter
-      - ws
-      - zod
 
   llamaindex@0.11.6(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.58))(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(zod@3.25.58):
     dependencies:
