@@ -1,20 +1,13 @@
 import { blModel, blTools } from "@blaxel/llamaindex";
-import { agent, AgentStream, tool } from "llamaindex";
-
+import { agent } from "@llamaindex/workflow";
+import { tool } from "llamaindex";
 import { z } from "zod";
-interface Stream {
-  write: (data: string) => void;
-  end: () => void;
-}
 
-export default async function myagent(
-  input: string,
-  stream: Stream
-): Promise<void> {
+export default async function myagent(input: string): Promise<string> {
   const tools = await blTools(["blaxel-search"]);
   const llm = await blModel("sandbox-openai");
-  const streamResponse = agent({
-    llm,
+
+  const response = await agent({
     tools: [
       ...tools,
       tool({
@@ -30,14 +23,11 @@ export default async function myagent(
       }),
     ],
     systemPrompt: "If the user ask for the weather, use the weather tool.",
+    llm: llm as any,
+    verbose: false,
   }).run(input);
 
-  for await (const event of streamResponse) {
-    if (event instanceof AgentStream) {
-      for (const chunk of event.data.delta) {
-        stream.write(chunk);
-      }
-    }
-  }
-  stream.end();
+  console.log(response);
+
+  return (response as any).data?.result || response.toString();
 }

@@ -17,7 +17,8 @@ async function main() {
 
   app.post<{ Body: RequestBody }>("/", async (request, reply) => {
     try {
-      await agent(request.body.inputs, reply.raw);
+      const response = await agent(request.body.inputs);
+      return reply.send(response);
     } catch (error: any) {
       console.error(error);
       return reply.status(500).send(error.stack);
