@@ -27,7 +27,5 @@ export default async function myagent(input: string): Promise<string> {
     verbose: false,
   }).run(input);
 
-  console.log(response);
-
   return (response as any).data?.result || response.toString();
 }
