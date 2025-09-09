@@ -14,15 +14,15 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@blaxel/core": "0.2.30",
-    "@blaxel/llamaindex": "0.2.30",
-    "@blaxel/telemetry": "0.2.30",
+    "@blaxel/core": "0.2.36",
+    "@blaxel/llamaindex": "0.2.36",
+    "@blaxel/telemetry": "0.2.36",
     "fastify": "^5.4.0"
   },
   "peerDependencies": {
-    "llamaindex": "*",
     "@llamaindex/core": "*",
     "@llamaindex/workflow": "*",
+    "llamaindex": "*",
     "zod": "*"
   },
   "devDependencies": {
