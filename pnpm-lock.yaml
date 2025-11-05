@@ -9,26 +9,26 @@ importers:
   .:
     dependencies:
       '@blaxel/core':
-        specifier: 0.2.46
-        version: 0.2.46(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
+        specifier: 0.2.47
+        version: 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@blaxel/llamaindex':
-        specifier: 0.2.46
-        version: 0.2.46(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
+        specifier: 0.2.47
+        version: 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
       '@blaxel/telemetry':
-        specifier: 0.2.46
-        version: 0.2.46(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(zod@3.25.76)
+        specifier: 0.2.47
+        version: 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(zod@3.25.76)
       '@llamaindex/core':
         specifier: '*'
         version: 0.6.13
       '@llamaindex/workflow':
         specifier: '*'
-        version: 1.1.15(@llamaindex/core@0.6.13)(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
+        version: 1.1.15(@llamaindex/core@0.6.13)(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
       fastify:
         specifier: ^5.4.0
         version: 5.4.0
       llamaindex:
         specifier: '*'
-        version: 0.11.19(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.76))(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
+        version: 0.11.19(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
       zod:
         specifier: '*'
         version: 3.25.76
@@ -114,16 +114,16 @@ packages:
     resolution: {integrity: sha512-Znroqdai1a90TlxGaJ+FK1lwC0fHpo97Xjsp5UKGR5JODYm7f9+/fF17ebO1KdoBr/Rm0UIFiF5VmI8ts9F1eA==}
     engines: {node: '>=18.0.0'}
 
-  '@blaxel/core@0.2.46':
-    resolution: {integrity: sha512-8YqnIsvVPPsryvd2T55k+vjx27Nfo5u3M3YvJKWE89oNedMKrkzBCUh7+hg4kM1yRtuUZxCC4RNsknk93xQhaw==}
+  '@blaxel/core@0.2.47':
+    resolution: {integrity: sha512-RG8skubFdneXFtEcA7rsEPsL9GipKN1zntmQevjoHm+dxPFbEkUA61j5BqSaCxGlTLeuOrsWTfXR9wrokcoTwg==}
     engines: {node: '>=18'}
 
-  '@blaxel/llamaindex@0.2.46':
-    resolution: {integrity: sha512-GDsXVPJsRCNq8z84fzXp1Hg5+VCVssVpCta3c9br7JA0FyY4Ha8BOHFeeGF8SHfru330OSJ+TuxE3IBXp07heA==}
+  '@blaxel/llamaindex@0.2.47':
+    resolution: {integrity: sha512-kbOATw1Nv2VoKemV+j9lMDfVoQYEDRGdVVeEesDfWcAB11i6joE4X5SaVADdZD8Vkz0csGK0D3B2XogWE6rJQA==}
     engines: {node: '>=18'}
 
-  '@blaxel/telemetry@0.2.46':
-    resolution: {integrity: sha512-Nl7ATR1KS7Gp6vrn/UG6FhAydmMtwrF9aOkWte1DQIgjI0WmbjOR24sGY3078g0BPsyxUCAB0CHLkqsd8tOr8Q==}
+  '@blaxel/telemetry@0.2.47':
+    resolution: {integrity: sha512-k6vN2llwXnpL633OVXWIlvEtcvpabtpinWSD85hfah6kRU6X5pIdCaoPRdgMl2N/ixYdVNLOYB7mcxwQV/S9MA==}
     engines: {node: '>=18'}
 
   '@esbuild/aix-ppc64@0.25.5':
@@ -437,10 +437,6 @@ packages:
     resolution: {integrity: sha512-lsBFADWVH1RRnAdSof49ZwmI+mBiaWdha9yYj87JMjp/o3d6SDvaEFpk+phDjRxAS+uVFvWD7HXk8ezhTXxRJA==}
     peerDependencies:
       zod: '>= 3'
-
-  '@modelcontextprotocol/sdk@1.12.1':
-    resolution: {integrity: sha512-KG1CZhZfWg+u8pxeM/mByJDScJSrjjxLc8fwQqbsS8xCjBmQfMNEBTotYdNanKekepnfRI85GtgQlctLFpcYPw==}
-    engines: {node: '>=18'}
 
   '@modelcontextprotocol/sdk@1.20.2':
     resolution: {integrity: sha512-6rqTdFt67AAAzln3NOKsXRmv5ZzPkgbfaebKBqUbts7vK1GZudqnrun5a8d3M/h955cam9RHZ6Jb4Y1XhnmFPg==}
@@ -966,10 +962,6 @@ packages:
   event-target-shim@5.0.1:
     resolution: {integrity: sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==}
     engines: {node: '>=6'}
-
-  eventsource-parser@3.0.2:
-    resolution: {integrity: sha512-6RxOBZ/cYgd8usLwsEl+EC09Au/9BcmCKYF2/xbml6DNczf7nv0MQb+7BA2F+li6//I+28VNlQR37XfQtcAJuA==}
-    engines: {node: '>=18.0.0'}
 
   eventsource-parser@3.0.6:
     resolution: {integrity: sha512-Vo1ab+QXPzZ4tCa8SwIHJFaSzy4R6SHf7BY79rFBDf0idraZWAkYrDjDj8uWaSm3S2TK+hJ7/t1CEmZ7jXw+pg==}
@@ -1813,7 +1805,7 @@ snapshots:
       '@smithy/types': 4.3.1
       tslib: 2.8.1
 
-  '@blaxel/core@0.2.46(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))':
+  '@blaxel/core@0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))':
     dependencies:
       '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@modelcontextprotocol/sdk': 1.20.2
@@ -1833,9 +1825,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@blaxel/llamaindex@0.2.46(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)':
+  '@blaxel/llamaindex@0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)':
     dependencies:
-      '@blaxel/core': 0.2.46(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
+      '@blaxel/core': 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@llamaindex/anthropic': 0.3.17(@llamaindex/core@0.6.13)(@llamaindex/env@0.1.30)
       '@llamaindex/core': 0.6.13
       '@llamaindex/google': 0.3.12(@llamaindex/core@0.6.13)(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)
@@ -1867,14 +1859,14 @@ snapshots:
       - zod
       - zod-to-json-schema
 
-  '@blaxel/telemetry@0.2.46(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(zod@3.25.76)':
+  '@blaxel/telemetry@0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(zod@3.25.76)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.39(zod@3.25.76)
       '@ai-sdk/cerebras': 1.0.27(zod@3.25.76)
       '@ai-sdk/google': 2.0.25(zod@3.25.76)
       '@ai-sdk/groq': 2.0.26(zod@3.25.76)
       '@ai-sdk/openai': 2.0.58(zod@3.25.76)
-      '@blaxel/core': 0.2.46(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
+      '@blaxel/core': 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/api-logs': 0.200.0
       '@opentelemetry/exporter-logs-otlp-http': 0.200.0(@opentelemetry/api@1.9.0)
@@ -2029,12 +2021,6 @@ snapshots:
 
   '@jsdevtools/ono@7.1.3': {}
 
-  '@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.76)':
-    optionalDependencies:
-      '@modelcontextprotocol/sdk': 1.12.1
-      p-retry: 6.2.1
-      zod: 3.25.76
-
   '@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76)':
     optionalDependencies:
       '@modelcontextprotocol/sdk': 1.20.2
@@ -2049,14 +2035,6 @@ snapshots:
       remeda: 2.23.0
     transitivePeerDependencies:
       - encoding
-
-  '@llamaindex/cloud@4.0.24(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/core@0.6.15)(@llamaindex/env@0.1.30)':
-    dependencies:
-      '@llama-flow/core': 0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.76)
-      '@llamaindex/core': 0.6.15
-      '@llamaindex/env': 0.1.30
-      p-retry: 6.2.1
-      zod: 3.25.76
 
   '@llamaindex/cloud@4.0.24(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/core@0.6.15)(@llamaindex/env@0.1.30)':
     dependencies:
@@ -2132,14 +2110,6 @@ snapshots:
       - ws
       - zod
 
-  '@llamaindex/workflow-core@1.1.0(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.76)':
-    dependencies:
-      simple-async-context: 1.0.4
-    optionalDependencies:
-      '@modelcontextprotocol/sdk': 1.12.1
-      p-retry: 6.2.1
-      zod: 3.25.76
-
   '@llamaindex/workflow-core@1.1.0(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76)':
     dependencies:
       simple-async-context: 1.0.4
@@ -2148,25 +2118,11 @@ snapshots:
       p-retry: 6.2.1
       zod: 3.25.76
 
-  '@llamaindex/workflow@1.1.15(@llamaindex/core@0.6.13)(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)':
+  '@llamaindex/workflow@1.1.15(@llamaindex/core@0.6.13)(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)':
     dependencies:
       '@llamaindex/core': 0.6.13
       '@llamaindex/env': 0.1.30
-      '@llamaindex/workflow-core': 1.1.0(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.76)
-      zod: 3.25.76
-      zod-to-json-schema: 3.24.6(zod@3.25.76)
-    transitivePeerDependencies:
-      - '@modelcontextprotocol/sdk'
-      - hono
-      - next
-      - p-retry
-      - rxjs
-
-  '@llamaindex/workflow@1.1.15(@llamaindex/core@0.6.15)(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)':
-    dependencies:
-      '@llamaindex/core': 0.6.15
-      '@llamaindex/env': 0.1.30
-      '@llamaindex/workflow-core': 1.1.0(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.76)
+      '@llamaindex/workflow-core': 1.1.0(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76)
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
     transitivePeerDependencies:
@@ -2195,23 +2151,6 @@ snapshots:
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
 
-  '@modelcontextprotocol/sdk@1.12.1':
-    dependencies:
-      ajv: 6.12.6
-      content-type: 1.0.5
-      cors: 2.8.5
-      cross-spawn: 7.0.6
-      eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.0(express@5.1.0)
-      pkce-challenge: 5.0.0
-      raw-body: 3.0.0
-      zod: 3.25.76
-      zod-to-json-schema: 3.24.6(zod@3.25.76)
-    transitivePeerDependencies:
-      - supports-color
-    optional: true
-
   '@modelcontextprotocol/sdk@1.20.2':
     dependencies:
       ajv: 6.12.6
@@ -2219,7 +2158,7 @@ snapshots:
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
-      eventsource-parser: 3.0.2
+      eventsource-parser: 3.0.6
       express: 5.1.0
       express-rate-limit: 7.5.0(express@5.1.0)
       pkce-challenge: 5.0.0
@@ -2797,13 +2736,11 @@ snapshots:
 
   event-target-shim@5.0.1: {}
 
-  eventsource-parser@3.0.2: {}
-
   eventsource-parser@3.0.6: {}
 
   eventsource@3.0.7:
     dependencies:
-      eventsource-parser: 3.0.2
+      eventsource-parser: 3.0.6
 
   express-rate-limit@7.5.0(express@5.1.0):
     dependencies:
@@ -3139,31 +3076,6 @@ snapshots:
       cookie: 1.0.2
       process-warning: 4.0.1
       set-cookie-parser: 2.7.1
-
-  llamaindex@0.11.19(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.76))(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76):
-    dependencies:
-      '@llamaindex/cloud': 4.0.24(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/core@0.6.15)(@llamaindex/env@0.1.30)
-      '@llamaindex/core': 0.6.15
-      '@llamaindex/env': 0.1.30
-      '@llamaindex/node-parser': 2.0.15(@llamaindex/core@0.6.15)(@llamaindex/env@0.1.30)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)
-      '@llamaindex/workflow': 1.1.15(@llamaindex/core@0.6.15)(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.12.1)(p-retry@6.2.1)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
-      '@types/lodash': 4.17.17
-      '@types/node': 24.0.15
-      lodash: 4.17.21
-      magic-bytes.js: 1.12.1
-    transitivePeerDependencies:
-      - '@huggingface/transformers'
-      - '@llama-flow/core'
-      - '@modelcontextprotocol/sdk'
-      - gpt-tokenizer
-      - hono
-      - next
-      - p-retry
-      - rxjs
-      - tree-sitter
-      - web-tree-sitter
-      - zod
-      - zod-to-json-schema
 
   llamaindex@0.11.19(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76):
     dependencies:
