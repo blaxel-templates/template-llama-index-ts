@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@blaxel/core':
-        specifier: 0.2.47
-        version: 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
+        specifier: 0.2.48
+        version: 0.2.48(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@blaxel/llamaindex':
-        specifier: 0.2.47
-        version: 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
+        specifier: 0.2.48
+        version: 0.2.48(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
       '@blaxel/telemetry':
-        specifier: 0.2.47
-        version: 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(zod@3.25.76)
+        specifier: 0.2.48
+        version: 0.2.48(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(zod@3.25.76)
       '@llamaindex/core':
         specifier: '*'
         version: 0.6.13
@@ -114,16 +114,16 @@ packages:
     resolution: {integrity: sha512-Znroqdai1a90TlxGaJ+FK1lwC0fHpo97Xjsp5UKGR5JODYm7f9+/fF17ebO1KdoBr/Rm0UIFiF5VmI8ts9F1eA==}
     engines: {node: '>=18.0.0'}
 
-  '@blaxel/core@0.2.47':
-    resolution: {integrity: sha512-RG8skubFdneXFtEcA7rsEPsL9GipKN1zntmQevjoHm+dxPFbEkUA61j5BqSaCxGlTLeuOrsWTfXR9wrokcoTwg==}
+  '@blaxel/core@0.2.48':
+    resolution: {integrity: sha512-hBYDb4gNRCme9PDcqJ2gS8TZE0bsXvQhn8xG+9P6opC92l8wklgUjnXT9RoXCWvd/xXY5UUwBiCfstWdAYoEdQ==}
     engines: {node: '>=18'}
 
-  '@blaxel/llamaindex@0.2.47':
-    resolution: {integrity: sha512-kbOATw1Nv2VoKemV+j9lMDfVoQYEDRGdVVeEesDfWcAB11i6joE4X5SaVADdZD8Vkz0csGK0D3B2XogWE6rJQA==}
+  '@blaxel/llamaindex@0.2.48':
+    resolution: {integrity: sha512-qO9c0iYy2BWR9VdF4nBDNmF82hggPQ9bKR4Rv9wzflCRQZtO0EVVi3kcMgLNwD+FZ1HHraIcG9YKL414oN8Xqw==}
     engines: {node: '>=18'}
 
-  '@blaxel/telemetry@0.2.47':
-    resolution: {integrity: sha512-k6vN2llwXnpL633OVXWIlvEtcvpabtpinWSD85hfah6kRU6X5pIdCaoPRdgMl2N/ixYdVNLOYB7mcxwQV/S9MA==}
+  '@blaxel/telemetry@0.2.48':
+    resolution: {integrity: sha512-6u8lb2yeIlnb3RPjXNTlER8hDDiCMiLHJ8eFVOTKyUEjC3nBM840NxrmRUKM3TlkSrg7m+hqqqYII6RaIeNGSw==}
     engines: {node: '>=18'}
 
   '@esbuild/aix-ppc64@0.25.5':
@@ -1805,7 +1805,7 @@ snapshots:
       '@smithy/types': 4.3.1
       tslib: 2.8.1
 
-  '@blaxel/core@0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))':
+  '@blaxel/core@0.2.48(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))':
     dependencies:
       '@hey-api/client-fetch': 0.10.2(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@modelcontextprotocol/sdk': 1.20.2
@@ -1825,9 +1825,9 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@blaxel/llamaindex@0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)':
+  '@blaxel/llamaindex@0.2.48(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(@llama-flow/core@0.4.4(@modelcontextprotocol/sdk@1.20.2)(p-retry@6.2.1)(zod@3.25.76))(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)(@opentelemetry/api@1.9.0)(p-retry@6.2.1)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(ws@8.18.2)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)':
     dependencies:
-      '@blaxel/core': 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
+      '@blaxel/core': 0.2.48(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@llamaindex/anthropic': 0.3.17(@llamaindex/core@0.6.13)(@llamaindex/env@0.1.30)
       '@llamaindex/core': 0.6.13
       '@llamaindex/google': 0.3.12(@llamaindex/core@0.6.13)(@llamaindex/env@0.1.30)(@modelcontextprotocol/sdk@1.20.2)
@@ -1859,14 +1859,14 @@ snapshots:
       - zod
       - zod-to-json-schema
 
-  '@blaxel/telemetry@0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(zod@3.25.76)':
+  '@blaxel/telemetry@0.2.48(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))(zod@3.25.76)':
     dependencies:
       '@ai-sdk/anthropic': 2.0.39(zod@3.25.76)
       '@ai-sdk/cerebras': 1.0.27(zod@3.25.76)
       '@ai-sdk/google': 2.0.25(zod@3.25.76)
       '@ai-sdk/groq': 2.0.26(zod@3.25.76)
       '@ai-sdk/openai': 2.0.58(zod@3.25.76)
-      '@blaxel/core': 0.2.47(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
+      '@blaxel/core': 0.2.48(@hey-api/openapi-ts@0.67.1(typescript@5.8.3))
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/api-logs': 0.200.0
       '@opentelemetry/exporter-logs-otlp-http': 0.200.0(@opentelemetry/api@1.9.0)
