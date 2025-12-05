@@ -14,9 +14,9 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@blaxel/core": "0.2.51",
-    "@blaxel/llamaindex": "0.2.51",
-    "@blaxel/telemetry": "0.2.51",
+    "@blaxel/core": "0.2.53",
+    "@blaxel/llamaindex": "0.2.53",
+    "@blaxel/telemetry": "0.2.53",
     "fastify": "^5.4.0"
   },
   "peerDependencies": {
