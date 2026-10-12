@@ -1,0 +1,9 @@
+allowBuilds:
+  esbuild: true
+  protobufjs: true
+  '@google/genai': false
+  tree-sitter: false
+overrides:
+  'js-yaml@>=4.0.0 <4.3.2': ^4.3.2
+  'toml@<4.2.0': ^4.2.0
+  '@llamaindex/env': 0.1.31
