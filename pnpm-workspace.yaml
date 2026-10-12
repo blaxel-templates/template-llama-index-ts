@@ -4,6 +4,7 @@ allowBuilds:
   '@google/genai': false
   tree-sitter: false
 overrides:
+  'undici@<6.27.0': ^6.27.0
   'js-yaml@>=4.0.0 <4.3.2': ^4.3.2
   'toml@<4.2.0': ^4.2.0
   '@llamaindex/env': 0.1.31
