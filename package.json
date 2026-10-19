@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@blaxel/core": "0.3.30",
-    "@blaxel/llamaindex": "0.3.30",
-    "@blaxel/telemetry": "0.3.30",
+    "@blaxel/llamaindex": "3.0.5",
+    "@blaxel/telemetry": "3.0.5",
     "fastify": "^5.4.0"
   },
   "peerDependencies": {
