@@ -30,8 +30,8 @@ importers:
         specifier: '*'
         version: 1.1.25(@llamaindex/core@0.6.23)(@llamaindex/env@0.1.31)(@modelcontextprotocol/sdk@1.32.1(zod@4.6.6))(hono@4.13.13)(zod@4.6.6)
       fastify:
-        specifier: ^5.4.0
-        version: 5.12.5
+        specifier: ^5.12.7
+        version: 5.12.7
       llamaindex:
         specifier: '*'
         version: 0.12.1(@modelcontextprotocol/sdk@1.32.1(zod@4.6.6))(hono@4.13.13)(tree-sitter@0.22.4)(web-tree-sitter@0.24.7)(zod@4.6.6)
@@ -1168,8 +1168,8 @@ packages:
   fast-uri@4.2.2:
     resolution: {integrity: sha512-EwVpUMzLVNOmcWW0zi5G3JJwkopB6XXjnVvNBGfqrMMsVew2hkQWl5e/pe/CfYUeS6jt4cIO2MnamEW7v/7wPw==}
 
-  fastify@5.12.5:
-    resolution: {integrity: sha512-OB2k1dlxs5/NAABqeKV2FUHkSD2BbENsCak8yULVcymn3fHIPDVa9TI3SDnJSWYSllZmSYuZXy2gTnsT+Sut1A==}
+  fastify@5.12.7:
+    resolution: {integrity: sha512-v4pEPsTRPuqlDIYiQFB+BHjVN4SdHX9u0ABk0ZDUKbbdY1vsNryUd1j4Z+jQEZajvYIVk047Kimva9/AJ79GYw==}
 
   fastq@1.20.3:
     resolution: {integrity: sha512-XKv5nnLs6nLF71NgiKJLIZFLkPyIEuOselLG7ujZnGrRfQK8HpvY+WqKhAJUAdLomwVHErVS4LfxFlPq0/FTAw==}
@@ -3197,7 +3197,7 @@ snapshots:
 
   fast-uri@4.2.2: {}
 
-  fastify@5.12.5:
+  fastify@5.12.7:
     dependencies:
       '@fastify/ajv-compiler': 4.0.7
       '@fastify/error': 4.2.1
