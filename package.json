@@ -17,7 +17,7 @@
     "@blaxel/core": "0.3.32",
     "@blaxel/llamaindex": "0.3.32",
     "@blaxel/telemetry": "0.3.32",
-    "fastify": "^5.4.0"
+    "fastify": "^5.12.7"
   },
   "peerDependencies": {
     "@llamaindex/core": "*",
